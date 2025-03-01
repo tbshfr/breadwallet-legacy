@@ -513,7 +513,7 @@ static NSDictionary *getKeychainDict(NSString *key, NSError **error)
 - (NSString *)seedPhraseWithPrompt:(NSString *)authprompt
 {
     @autoreleasepool {
-        return ([self authenticateWithPrompt:authprompt andTouchId:NO]) ? getKeychainString(MNEMONIC_KEY, nil) : nil;
+        return getKeychainString(MNEMONIC_KEY, nil);
     }
 }
 
