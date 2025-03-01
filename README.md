@@ -1,3 +1,8 @@
+## Build
+- Install xcode 7.3   
+- `xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNGING_REQUIRED=NO`
+- `/usr/bin/xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/breadwallet.app -o output_path/Breadwallet.ipa`
+
 ![ƀ](/images/icon.png) breadwallet
 ----------------------------------
 
